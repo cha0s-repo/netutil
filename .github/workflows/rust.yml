@@ -28,7 +28,7 @@ jobs:
         FILE_NAME="netutil-${{ github.ref_name }}-${{ matrix.arch }}"
         pwd
         find . -name "netutil"
-        mv ./target/release/netutil ./FILE_NAME
+        mv ./target/release/netutil "$FILE_NAME"
         ls -al
     - name: Release
       uses: softprops/action-gh-release@v2
