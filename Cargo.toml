@@ -1,0 +1,15 @@
+[package]
+name = "netutil"
+version = "0.1.0"
+edition = "2021"
+description = "A network protocol utility tool supporting HTTP, WebSocket, TCP, UDP, and ICMP"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = "0.26"
+futures-util = "0.3"
+anyhow = "1"
+colored = "2"
+url = "2"
